@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
+    'payment.apps.PaymentConfig',
 ]
 
 MIDDLEWARE = [
@@ -141,3 +142,18 @@ EMAIL_USE_TLS = True
 
 # For RabbitMQ
 CELERY_BROKER_URL = 'amqp://localhost'
+
+
+# Braintree settings
+BRAINTREE_MERCHANT_ID = 'bq4n7cdx5nw4cx3n'  # Merchant ID
+BRAINTREE_PUBLIC_KEY = 's7qdb82d8jtrbxqr'   # Public Key
+BRAINTREE_PRIVATE_KEY = '928df87eb18bd2372305e20e0058b23c'  # Private key
+
+import braintree
+
+BRAINTREE_CONF = braintree.Configuration(
+    braintree.Environment.Sandbox,
+    BRAINTREE_MERCHANT_ID,
+    BRAINTREE_PUBLIC_KEY,
+    BRAINTREE_PRIVATE_KEY
+)
