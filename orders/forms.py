@@ -1,8 +1,10 @@
 from django import forms
 from .models import Order
+from localflavor.in_.forms import INZipCodeField
 
 
 class OrderCreateForm(forms.ModelForm):
+    zipcode = INZipCodeField()
     class Meta:
         model = Order
         fields = ['first_name', 'last_name', 'email', 'address',

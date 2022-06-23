@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'payment.apps.PaymentConfig',
     'coupon.apps.CouponConfig',
     'rosetta',
+    'parler',
+    'localflavor',
 ]
 
 MIDDLEWARE = [
@@ -172,3 +174,14 @@ BRAINTREE_CONF = braintree.Configuration(
     BRAINTREE_PUBLIC_KEY,
     BRAINTREE_PRIVATE_KEY
 )
+
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en'},
+        {'code': 'ml'},
+    ),
+    'default': {
+        'fallback': 'en',
+        'hide_untranslated': False,
+    }
+}
