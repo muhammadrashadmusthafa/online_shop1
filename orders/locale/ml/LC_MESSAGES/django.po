@@ -2,14 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 20:23+0530\n"
-"PO-Revision-Date: 2022-06-16 20:09+0000\n"
+"POT-Creation-Date: 2022-09-05 04:41+0530\n"
+"PO-Revision-Date: 2022-09-04 23:08+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,39 +19,39 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: .\orders\models.py:10
+#: orders/models.py:10
 msgid "first name"
 msgstr "ആദ്യത്തെ പേര്"
 
-#: .\orders\models.py:11
+#: orders/models.py:11
 msgid "last name"
 msgstr "അവസാനത്തെ പേര്"
 
-#: .\orders\models.py:12
+#: orders/models.py:12
 msgid "e-mail"
 msgstr "ഇമെയിൽ"
 
-#: .\orders\models.py:13
+#: orders/models.py:13
 msgid "address"
 msgstr "അഡ്രെസ്സ്"
 
-#: .\orders\models.py:14
+#: orders/models.py:14
 msgid "postal code"
 msgstr "പോസ്റ്റൽ കോഡ്"
 
-#: .\orders\models.py:15
+#: orders/models.py:15
 msgid "city"
 msgstr "സിറ്റി"
 
-#: .\orders\templates\orders\order\create.html:5
+#: orders/templates/orders/order/create.html:5
 msgid "Checkout"
 msgstr "ചെക്ക് ഔട്ട്   "
 
-#: .\orders\templates\orders\order\create.html:12
+#: orders/templates/orders/order/create.html:12
 msgid "Your order"
 msgstr "നിങ്ങളുടെ ഓർഡർ "
 
-#: .\orders\templates\orders\order\create.html:22
+#: orders/templates/orders/order/create.html:22
 #, python-format
 msgid ""
 "\n"
@@ -61,16 +61,16 @@ msgstr ""
 "\n"
 "\"%(code)s\" (%(discount)s%% കുറവ്)"
 
-#: .\orders\templates\orders\order\create.html:34
+#: orders/templates/orders/order/create.html:34
 msgid "Place order"
 msgstr "വാങ്ങിക്കുക  "
 
-#: .\orders\templates\orders\order\created.html:6
-#: .\orders\templates\orders\order\created.html:10
+#: orders/templates/orders/order/created.html:6
+#: orders/templates/orders/order/created.html:10
 msgid "Thank you"
-msgstr "സഡഫസദഫ് "
+msgstr "നന്ദി "
 
-#: .\orders\templates\orders\order\created.html:11
+#: orders/templates/orders/order/created.html:11
 #, python-format
 msgid ""
 "\n"
